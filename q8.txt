@@ -1,0 +1,9 @@
+Global variable:
+Declared outside of all functions.
+It can be accessed and modified by any function in the same file.
+Its lifetime extends for the entire execution of the program.
+
+Local variable:
+Declared inside a function (in this case, inside main()).
+It can only be accessed within that specific function.
+Its lifetime begins when the function starts and ends when the function finishes.
