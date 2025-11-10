@@ -1,0 +1,14 @@
+1value 
+Error: Identifiers cannot begin with a digit.
+Fix: Rename to start with a letter or underscore.
+int value1 = 10;
+
+avg-rate
+Error: The hyphen - is not allowed in identifiers; it’s treated as a subtraction operator.
+Fix: Use an underscore _ or camel case instead.
+float avg_rate = 12.5;
+
+Class 
+Error: Although uppercase names are allowed, Class conflicts with the C++ keyword class and should be avoided for portability and clarity.
+Fix: Use a lowercase or descriptive name.
+char grade = 'A'; or char class_grade = 'A';
