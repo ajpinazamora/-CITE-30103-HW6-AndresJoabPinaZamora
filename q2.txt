@@ -1,0 +1,29 @@
+1. Preprocessing Stage:
+   - The preprocessor handles all lines that begin with ‘#’, such as 
+     #include and #define.
+   - It replaces macros, inserts header files, and removes comments.
+   - Example Error: “fatal error: myfile.h: No such file or directory”
+     (when a header file cannot be found).
+
+2. Compilation Stage:
+   - The compiler checks syntax, data types, and converts the 
+     preprocessed code into assembly code.
+   - Example Error: “error: expected ‘;’ before ‘return’” 
+     (missing semicolon or invalid syntax).
+
+3. Assembly Stage:
+   - The assembler translates the assembly code into object code 
+     (machine language) and produces an object file (.o).
+   - Example Error: “unknown instruction” (invalid inline assembly).
+
+4. Linking Stage:
+   - The linker combines all object files and external libraries 
+     into a single executable file.
+   - Example Error: “undefined reference to ‘sqrt’” 
+     (when using a function not linked with the proper library).
+
+5. Loading/Execution Stage:
+   - The operating system loads the executable into memory and 
+     begins running it starting from main().
+   - Example Error: “Permission denied” or “No such file or directory”
+     (if the executable cannot be run properly).
