@@ -1,0 +1,11 @@
+If #include <stdio.h> is removed from a program that uses the printf function, the compiler no longer knows the definition of printf. Without this header, the compiler cannot verify the function’s prototype or return type.
+
+During the compilation stage, the compiler will generate an error such as:
+
+error: implicit declaration of function 'printf' is invalid in C99
+
+or
+
+error: ‘printf’ undeclared (first use in this function)
+
+Because of this missing header, the compilation fails, and no executable file is created until the #include <stdio.h> line is restored.
